@@ -4,240 +4,651 @@
     <meta charset="utf-8" />
     <title>Keystroke Biometric Test</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
       body {
-        padding: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        background-color: #f8f9fa; /* Light background */
+      }
+      .card {
+        margin-bottom: 1.5rem;
       }
       #bioInput {
         font-size: 1.2rem;
+        height: calc(1.5em + 1rem + 2px); /* Adjust height */
       }
-      .result {
+      .result-area {
         margin-top: 1rem;
-        font-weight: bold;
+        min-height: 50px; /* Reserve space */
       }
       .history-table {
-        margin-top: 2rem;
+        margin-top: 1rem;
+        max-height: 400px;
+        overflow-y: auto;
+        display: block; /* Needed for max-height and overflow */
+      }
+      /* Style for loading spinner */
+      .spinner-border-sm {
+         width: 1rem;
+         height: 1rem;
+         border-width: .2em;
+      }
+      /* Hide elements */
+      .hidden {
+        display: none;
       }
     </style>
   </head>
   <body class="container">
-    <h1 class="mb-4">Keystroke Biometric Test</h1>
+    <h1 class="mb-4 text-center">Keystroke Biometric Test</h1>
 
-    <div class="row mb-3 g-3">
-      <div class="col-md-4">
-        <label class="form-label">Participant</label>
-        <select id="participant" class="form-select"></select>
-      </div>
-      <div class="col-md-2 d-flex align-items-end">
-        <button id="newPartBtn" class="btn btn-outline-secondary w-100">
-          New
-        </button>
-      </div>
-      <div class="col-md-4">
-        <label class="form-label">Session</label>
-        <select id="session" class="form-select"></select>
-        <input
-          type="number"
-          id="newSession"
-          class="form-control mt-2"
-          placeholder="Or new session #"
-        />
-      </div>
-      <div class="col-md-2 d-flex align-items-end">
-        <button id="loadSessions" class="btn btn-secondary w-100 mb-2">
-          Load
-        </button>
-        <button id="viewHistory" class="btn btn-info w-100">History</button>
-      </div>
-    </div>
+    <div id="alertArea" class="mb-3"></div>
 
-    <div class="mb-3">
-      <label class="form-label">Type “hello world” below:</label>
-      <input type="text" id="bioInput" class="form-control" />
-    </div>
-
-    <div class="mb-3">
-      <button id="submitBtn" class="btn btn-primary me-2">Submit</button>
-      <button id="resetBtn" class="btn btn-outline-secondary">Reset</button>
-    </div>
-
-    <div id="result" class="result text-success"></div>
-    <div id="saved" class="text-success"></div>
-
-    <table class="table table-striped history-table">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>key1</th>
-          <th>key2</th>
-          <th>DU</th>
-          <th>DD</th>
-          <th>DU2</th>
-          <th>UD</th>
-          <th>UU</th>
-        </tr>
-      </thead>
-      <tbody id="historyBody"></tbody>
-    </table>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card shadow-sm">
+          <div class="card-header">
+            <h5 class="mb-0">1. Setup Participant & Session</h5>
+          </div>
+          <div class="card-body">
+            <div class="row g-3 mb-3 align-items-end">
+              <div class="col-sm-6">
+                <label for="participant" class="form-label">Existing Participant</label>
+                <select id="participant" class="form-select">
+                  <option value="">Loading...</option>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                 <label for="newParticipant" class="form-label">Or Create New</label>
+                 <div class="input-group">
+                    <input type="text" id="newParticipant" class="form-control" placeholder="e.g., p0099">
+                    <button id="newPartBtn" class="btn btn-outline-success" type="button" title="Create and select">
+                      <i class="bi bi-plus-lg"></i> Create
+                    </button>
+                 </div>
+              </div>
+            </div>
+            <div class="row g-3 align-items-end">
+              <div class="col-sm-6">
+                <label for="session" class="form-label">Existing Session</label>
+                <select id="session" class="form-select" disabled>
+                  <option value="">— Select Participant —</option>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <label for="newSession" class="form-label">Or Use New Session #</label>
+                <input type="number" id="newSession" class="form-control" placeholder="Next Session #" min="1" disabled/>
+              </div>
+            </div>
+          </div>
+        </div><div class="card shadow-sm">
+          <div class="card-header">
+            <h5 class="mb-0">2. Type Target Phrase</h5>
+          </div>
+          <div class="card-body">
+            <div class="mb-3">
+              <label for="bioInput" class="form-label">Type exactly: <code class="user-select-all">hello world</code></label>
+              <input type="text" id="bioInput" class="form-control" placeholder="Start typing here..." disabled/>
+            </div>
+            <div class="d-flex justify-content-end">
+              <button id="resetBtn" class="btn btn-outline-secondary me-2" disabled>
+                <i class="bi bi-arrow-clockwise"></i> Reset Typing
+              </button>
+              <button id="submitBtn" class="btn btn-primary" disabled>
+                <span class="spinner-border spinner-border-sm hidden me-1" role="status" aria-hidden="true"></span>
+                <i class="bi bi-send"></i> Submit Data
+              </button>
+            </div>
+          </div>
+          <div class="card-footer result-area" id="resultArea">
+             </div>
+        </div></div><div class="col-lg-6">
+        <div class="card shadow-sm">
+          <div class="card-header">
+            <h5 class="mb-0">Session History</h5>
+          </div>
+          <div class="card-body">
+            <button id="viewHistoryBtn" class="btn btn-info mb-3 w-100" disabled>
+                <span class="spinner-border spinner-border-sm hidden me-1" role="status" aria-hidden="true"></span>
+                <i class="bi bi-eye"></i> View History for Selected Session
+            </button>
+             <div class="table-responsive history-table-container">
+                 <table class="table table-striped table-hover history-table">
+                    <thead class="table-light sticky-top">
+                        <tr>
+                        <th>#</th>
+                        <th>Key1</th>
+                        <th>Key2</th>
+                        <th>H. K1 (ms)</th> <th>DD K1→K2 (ms)</th> <th>DU K1→K2 (ms)</th> <th>UD K1→K2 (ms)</th> <th>UU K1→K2 (ms)</th> </tr>
+                    </thead>
+                    <tbody id="historyBody">
+                        <tr><td colspan="8" class="text-center text-muted">Select participant and session, then click 'View History'.</td></tr>
+                    </tbody>
+                </table>
+             </div>
+          </div>
+        </div></div></div><script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        const partSel = document.getElementById("participant");
-        const newPart = document.getElementById("newPartBtn");
-        const sessSel = document.getElementById("session");
-        const newSess = document.getElementById("newSession");
-        const viewHist = document.getElementById("viewHistory");
+        // --- DOM Elements ---
+        const participantSelect = document.getElementById("participant");
+        const newParticipantInput = document.getElementById("newParticipant");
+        const newParticipantBtn = document.getElementById("newPartBtn");
+        const sessionSelect = document.getElementById("session");
+        const newSessionInput = document.getElementById("newSession");
+        const viewHistoryBtn = document.getElementById("viewHistoryBtn");
         const bioInput = document.getElementById("bioInput");
         const submitBtn = document.getElementById("submitBtn");
         const resetBtn = document.getElementById("resetBtn");
-        const result = document.getElementById("result");
-        const saved = document.getElementById("saved");
-        const histBody = document.getElementById("historyBody");
-        let events = [];
+        const resultArea = document.getElementById("resultArea");
+        const historyBody = document.getElementById("historyBody");
+        const alertArea = document.getElementById("alertArea");
+        const submitSpinner = submitBtn.querySelector(".spinner-border");
+        const historySpinner = viewHistoryBtn.querySelector(".spinner-border");
 
-        // helper: fetch sessions for p and update sessSel + newSess
-        function refreshSessions() {
-          const p = partSel.value;
-          sessSel.innerHTML = `<option value="">— select —</option>`;
-          newSess.value = "";
-          if (!p) return;
+        let keyEvents = []; // Stores { key, down: time, up: time }
+        const TARGET_PHRASE = "hello world"; // Maybe make dynamic later
 
-          fetch(`/sessions?participant=${encodeURIComponent(p)}`)
-            .then((r) => r.json())
-            .then((js) => {
-              // build dropdown
-              const nums = js.sessions
-                .map((s) => parseInt(s, 10))
-                .filter((n) => !isNaN(n))
-                .sort((a, b) => a - b);
-
-              nums.forEach((n) => sessSel.add(new Option(n, n)));
-
-              // next session = max+1 or 1
-              const next = nums.length ? nums[nums.length - 1] + 1 : 1;
-              newSess.value = next;
-            })
-            .catch((err) => console.error("Failed to load sessions", err));
+        // --- UI Helper Functions ---
+        function toggleLoading(button, isLoading) {
+            const spinner = button.querySelector(".spinner-border");
+            if (isLoading) {
+                button.disabled = true;
+                if (spinner) spinner.classList.remove("hidden");
+            } else {
+                button.disabled = false;
+                if (spinner) spinner.classList.add("hidden");
+            }
         }
 
-        // initial participants load
-        fetch("/participants")
-          .then((r) => r.json())
-          .then((js) => {
-            partSel.innerHTML = `<option value="">— select —</option>`;
-            js.participants.forEach((p) => partSel.add(new Option(p, p)));
-          });
+        function showAlert(message, type = 'danger') { // type: primary, secondary, success, danger, warning, info, light, dark
+             const wrapper = document.createElement('div');
+             wrapper.innerHTML = `
+                <div class="alert alert-${type} alert-dismissible fade show" role="alert">
+                    ${message}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>`;
+             alertArea.innerHTML = ''; // Clear previous alerts
+             alertArea.append(wrapper);
+        }
 
-        // whenever you pick an existing participant
-        partSel.addEventListener("change", refreshSessions);
+        function clearAlert() {
+            alertArea.innerHTML = '';
+        }
 
-        // when creating a new one
-        newPart.addEventListener("click", () => {
-          const p = prompt("New participant ID (e.g. p0099):");
-          if (!p) return;
-          partSel.add(new Option(p, p), 1);
-          partSel.value = p;
-          refreshSessions(); // <-- auto-fetch (will be empty), so newSess→1
-        });
+        function clearResultArea() {
+             resultArea.innerHTML = '';
+             resultArea.className = 'card-footer result-area'; // Reset classes
+        }
 
-        viewHist.addEventListener("click", () => {
-          const p = partSel.value;
-          const s = newSess.value || sessSel.value;
-          if (!p || !s) return alert("Participant & session required");
-          fetch(
-            `/history?participant=<span class="math-inline">\{p\}&session\=</span>{s}`
-          )
-            .then((r) => r.json())
-            .then((js) => {
-              histBody.innerHTML = "";
-              js.history.forEach((row, i) => {
-                const tr = document.createElement("tr");
-                tr.innerHTML = `
-                    <td><span class="math-inline">\{i \+ 1\}</td\>
-      <td\></span>{row.key1}</td><td><span class="math-inline">\{row\.key2\}</td\>
-      <td\></span>{row["DU.key1.key1"]}</td>
-                    <td><span class="math-inline">\{row\["DD\.key1\.key2"\]\}</td\>
-      <td\></span>{row["DU.key1.key2"]}</td>
-                    <td><span class="math-inline">\{row\["UD\.key1\.key2"\]\}</td\>
-      <td\></span>{row["UU.key1.key2"]}</td>
-                  `;
-                histBody.append(tr);
-              });
+        function displayResult(message, isError = false, details = null) {
+            clearAlert();
+            resultArea.innerHTML = ''; // Clear previous results
+            resultArea.classList.remove('text-success', 'text-danger', 'text-warning'); // Remove old color classes
+
+            const messageDiv = document.createElement('div');
+            messageDiv.textContent = message;
+
+            if (isError) {
+                 resultArea.classList.add('text-danger');
+            } else if (details && details.saved === false && details.save_error) {
+                 resultArea.classList.add('text-warning'); // Partial success/failure
+                 messageDiv.textContent += ` (Warning: ${details.save_error})`;
+            } else if (details && details.saved === true) {
+                 resultArea.classList.add('text-success');
+                 messageDiv.textContent += ' (✓ Data Saved)';
+            } else {
+                 resultArea.classList.add('text-info'); // Default info color if not error/success
+            }
+            resultArea.appendChild(messageDiv);
+
+            // Optionally display more details
+            if (details) {
+                console.log("Response Details:", details); // Log details for debugging
+                const detailsPre = document.createElement('pre');
+                detailsPre.style.fontSize = '0.8em';
+                detailsPre.textContent = `Digraphs: ${details.digraphs_processed}/${details.digraphs_received}. Predicted Index: ${details.predicted_index ?? 'N/A'}.`;
+                if (details.prediction_error) {
+                    detailsPre.textContent += ` Prediction Error: ${details.prediction_error}.`;
+                }
+                resultArea.appendChild(detailsPre);
+            }
+        }
+
+        function updateHistoryTable(historyData) {
+          historyBody.innerHTML = ""; // Clear existing rows
+          if (!historyData || historyData.length === 0) {
+            historyBody.innerHTML = '<tr><td colspan="8" class="text-center text-muted">No history found for this session.</td></tr>';
+            return;
+          }
+
+          // Check expected feature keys - ADJUST THESE if your Flask/CSV uses different names
+          const featureKeys = ["DU.key1.key1", "DD.key1.key2", "DU.key1.key2", "UD.key1.key2", "UU.key1.key2"];
+
+          historyData.forEach((row, i) => {
+            const tr = document.createElement("tr");
+            // Ensure features exist and format them (e.g., round numbers)
+            const featValues = featureKeys.map(key => {
+                const val = row[key];
+                if (typeof val !== 'undefined' && val !== null && !isNaN(parseFloat(val))) {
+                    return parseFloat(val).toFixed(2); // Format to 2 decimal places
+                }
+                return 'N/A'; // Placeholder if data missing/invalid
             });
-        });
 
-        function setupListeners() {
-          events = [];
-          bioInput.value = "";
-          bioInput.focus();
-          bioInput.onkeydown = null;
-          bioInput.onkeyup = null;
-          bioInput.addEventListener("keydown", (e) => {
-            events.push({ key: e.key, down: performance.now(), up: null });
+            tr.innerHTML = `
+              <td>${i + 1}</td>
+              <td>${row.key1 || 'N/A'}</td>
+              <td>${row.key2 || 'N/A'}</td>
+              <td>${featValues[0]}</td>
+              <td>${featValues[1]}</td>
+              <td>${featValues[2]}</td>
+              <td>${featValues[3]}</td>
+              <td>${featValues[4]}</td>
+            `;
+            historyBody.appendChild(tr);
           });
-          bioInput.addEventListener("keyup", (e) => {
-            for (let i = events.length - 1; i >= 0; --i) {
-              if (events[i].key === e.key && events[i].up === null) {
-                events[i].up = performance.now();
-                break;
-              }
+        }
+
+
+        // --- Core Logic Functions ---
+
+        async function loadParticipants() {
+          try {
+            const response = await fetch("/participants");
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            const result = await response.json();
+
+            if (result.error) {
+                showAlert(`Error loading participants: ${result.error}`);
+                participantSelect.innerHTML = '<option value="">Error loading</option>';
+                return;
+            }
+
+            participantSelect.innerHTML = '<option value="">— Select Participant —</option>';
+            result.data.participants.forEach(p => {
+              participantSelect.add(new Option(p, p));
+            });
+          } catch (error) {
+            console.error("Failed to load participants:", error);
+            showAlert(`Network or server error loading participants: ${error.message}`);
+            participantSelect.innerHTML = '<option value="">Error loading</option>';
+          } finally {
+              checkFormReadiness(); // Enable/disable fields based on load
+          }
+        }
+
+        async function loadSessions(participantId) {
+          sessionSelect.innerHTML = '<option value="">Loading...</option>';
+          sessionSelect.disabled = true;
+          newSessionInput.disabled = true;
+          viewHistoryBtn.disabled = true;
+          if (!participantId) {
+              sessionSelect.innerHTML = '<option value="">— Select Participant —</option>';
+              checkFormReadiness();
+              return;
+          }
+
+          try {
+            const response = await fetch(`/sessions?participant=${encodeURIComponent(participantId)}`);
+             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+             const result = await response.json();
+
+            if (result.error) {
+                showAlert(`Error loading sessions: ${result.error}`, 'warning');
+                sessionSelect.innerHTML = '<option value="">Error</option>';
+                newSessionInput.value = ''; // Clear suggested next session
+                newSessionInput.placeholder = "Error";
+                return;
+            }
+
+            sessionSelect.innerHTML = '<option value="">— Select Session —</option>';
+            const sessions = result.data.sessions || []; // Ensure sessions is an array
+            sessions.forEach(s => sessionSelect.add(new Option(s, s)));
+
+            // Suggest next session number
+            const maxSession = sessions.length > 0 ? Math.max(...sessions) : 0;
+            const nextSession = maxSession + 1;
+            newSessionInput.value = ''; // Clear first, then set placeholder
+            newSessionInput.placeholder = `Next: ${nextSession}`;
+
+
+            sessionSelect.disabled = false;
+            newSessionInput.disabled = false;
+            viewHistoryBtn.disabled = false; // Enable history button now
+
+          } catch (error) {
+            console.error(`Failed to load sessions for ${participantId}:`, error);
+            showAlert(`Network or server error loading sessions: ${error.message}`, 'warning');
+            sessionSelect.innerHTML = '<option value="">Error</option>';
+            newSessionInput.value = '';
+            newSessionInput.placeholder = "Error";
+          } finally {
+              checkFormReadiness(); // Update overall form state
+          }
+        }
+
+        function setupTypingListeners() {
+          keyEvents = [];
+          bioInput.value = "";
+          clearResultArea(); // Clear previous results
+          bioInput.onkeydown = null; // Remove old listeners first
+          bioInput.onkeyup = null;
+
+          bioInput.addEventListener("keydown", (e) => {
+            // Basic check to only record printable chars, backspace, space?
+            // Or just record everything for now.
+            // Prevent default for keys we don't want to type (like tab maybe?)
+            // if (e.key === 'Tab') e.preventDefault();
+
+            // Add event if not already pressed down (handles key repeats)
+            if (!keyEvents.find(ev => ev.key === e.key && ev.up === null)) {
+                 keyEvents.push({ key: e.key, down: performance.now(), up: null });
             }
           });
-        }
-        setupListeners();
 
-        submitBtn.addEventListener("click", () => {
-          const p = partSel.value;
-          const s = parseInt(newSess.value || sessSel.value, 10);
-          if (!p || !s) return alert("Participant & session required");
-
-          // build digraphs
-          const digs = [];
-          for (let i = 0; i + 1 < events.length; i++) {
-            const k1 = events[i],
-              k2 = events[i + 1];
-            if (k1.up == null || k2.up == null) continue;
-            digs.push({
-              key1: k1.key,
-              key2: k2.key,
-              features: [
-                k1.up - k1.down,
-                k2.down - k1.down,
-                k2.down - k1.up,
-                k2.up - k1.down,
-                k2.up - k1.up,
-              ],
-            });
-          }
-          fetch("/predict", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              participant: p,
-              session: s,
-              digraphs: digs,
-            }),
-          })
-            .then((r) => r.json())
-            .then((js) => {
-              if (js.error) result.textContent = js.error;
-              else {
-                result.textContent = `Predicted: ${js.predicted_user}`;
-                saved.textContent = js.saved ? "✓ Saved" : "⚠️ Failed to save";
+          bioInput.addEventListener("keyup", (e) => {
+            for (let i = keyEvents.length - 1; i >= 0; --i) {
+              if (keyEvents[i].key === e.key && keyEvents[i].up === null) {
+                keyEvents[i].up = performance.now();
+                break; // Found the corresponding keydown, mark up time
               }
-            });
+            }
+            checkFormReadiness(); // Check if enough text is typed
+          });
+
+          bioInput.focus();
+          checkFormReadiness();
+        }
+
+        function checkFormReadiness() {
+            const participantSelected = participantSelect.value !== "";
+            const sessionSelected = sessionSelect.value !== "" || (newSessionInput.value !== "" && !isNaN(parseInt(newSessionInput.value)));
+            const typingDone = bioInput.value.length > 0; // Simple check, could check against TARGET_PHRASE
+
+            // Enable session inputs only if participant is selected
+            sessionSelect.disabled = !participantSelected;
+            newSessionInput.disabled = !participantSelected;
+
+            // Enable typing area only if participant AND session are ready
+            bioInput.disabled = !(participantSelected && sessionSelected);
+            resetBtn.disabled = !(participantSelected && sessionSelected);
+
+             // Enable submit only if participant, session, AND typing is done
+            submitBtn.disabled = !(participantSelected && sessionSelected && typingDone);
+
+            // Enable view history if participant and a session (either existing or new) is selected/entered
+            viewHistoryBtn.disabled = !(participantSelected && sessionSelected);
+        }
+
+
+        // --- Event Listeners ---
+
+        participantSelect.addEventListener("change", () => {
+            clearAlert();
+            clearResultArea();
+            historyBody.innerHTML = '<tr><td colspan="8" class="text-center text-muted">Select a session and click \'View History\'.</td></tr>'; // Clear history table
+            newParticipantInput.value = ""; // Clear new participant input if selection changes
+            loadSessions(participantSelect.value);
         });
+
+        newParticipantBtn.addEventListener("click", () => {
+            clearAlert();
+            const newP = newParticipantInput.value.trim();
+            if (!newP) {
+                showAlert("Please enter a new participant ID.", "warning");
+                return;
+            }
+            // Basic validation (e.g., starts with 'p' and has numbers?) - Optional
+            // if (!/^p\d+$/.test(newP)) {
+            //     showAlert("Participant ID should start with 'p' followed by numbers (e.g., p001).", "warning");
+            //     return;
+            // }
+
+            // Check if participant already exists in the dropdown
+            let exists = false;
+            for (let i = 0; i < participantSelect.options.length; i++) {
+                if (participantSelect.options[i].value === newP) {
+                    exists = true;
+                    break;
+                }
+            }
+
+            if (exists) {
+                 participantSelect.value = newP; // Select existing
+                 showAlert(`Participant '${newP}' already exists. Selected it for you.`, 'info');
+            } else {
+                // Add new participant to the top of the list (after the placeholder)
+                const option = new Option(newP, newP);
+                participantSelect.add(option, 1); // Add after the placeholder
+                participantSelect.value = newP; // Select the new participant
+                showAlert(`Created and selected new participant: '${newP}'.`, 'success');
+            }
+            newParticipantInput.value = ""; // Clear input field
+            loadSessions(newP); // Load sessions (will be empty) for the new participant
+        });
+
+        // Enable typing/reset/submit when a session is chosen or entered
+        sessionSelect.addEventListener('change', checkFormReadiness);
+        newSessionInput.addEventListener('input', checkFormReadiness);
+        bioInput.addEventListener('input', checkFormReadiness); // Check readiness as user types
 
         resetBtn.addEventListener("click", () => {
-          setupListeners();
-          result.textContent = "";
-          saved.textContent = "";
+            setupTypingListeners();
+            clearAlert();
+            clearResultArea();
         });
-      });
+
+        viewHistoryBtn.addEventListener("click", async () => {
+            clearAlert();
+            const p = participantSelect.value;
+            // Prioritize new session input if filled, otherwise use selected session
+            const s = newSessionInput.value.trim() || sessionSelect.value;
+
+            if (!p || !s) {
+                showAlert("Participant & Session must be selected or entered.", "warning");
+                return;
+            }
+             if (isNaN(parseInt(s))) {
+                 showAlert("Session must be a number.", "warning");
+                 return;
+             }
+
+            toggleLoading(viewHistoryBtn, true);
+            historyBody.innerHTML = '<tr><td colspan="8" class="text-center text-muted">Loading history...</td></tr>';
+
+            try {
+                const response = await fetch(`/history?participant=${encodeURIComponent(p)}&session=${encodeURIComponent(s)}`);
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                const result = await response.json();
+
+                if (result.error) {
+                    showAlert(`Error loading history: ${result.error}`);
+                    historyBody.innerHTML = `<tr><td colspan="8" class="text-center text-danger">Error: ${result.error}</td></tr>`;
+                } else {
+                    updateHistoryTable(result.data.history);
+                }
+            } catch (error) {
+                console.error("Failed to fetch history:", error);
+                showAlert(`Network or server error loading history: ${error.message}`);
+                 historyBody.innerHTML = `<tr><td colspan="8" class="text-center text-danger">Failed to load history.</td></tr>`;
+            } finally {
+                toggleLoading(viewHistoryBtn, false);
+            }
+        });
+
+
+        submitBtn.addEventListener("click", async () => {
+          clearAlert();
+          clearResultArea();
+          const p = participantSelect.value;
+          // Prioritize new session input if filled and valid, otherwise use selected session
+          let s_val = newSessionInput.value.trim();
+          let s;
+          if (s_val && !isNaN(parseInt(s_val)) && parseInt(s_val) > 0) {
+              s = parseInt(s_val);
+          } else if (sessionSelect.value) {
+              s = parseInt(sessionSelect.value);
+          } else {
+              showAlert("Valid session number is required (either selected or entered).", "warning");
+              return;
+          }
+
+          if (!p || !s) { // Should be caught by button disable, but double-check
+            showAlert("Participant & Session required.", "warning");
+            return;
+          }
+          if (bioInput.value.trim().length === 0) {
+              showAlert("Please type the target phrase.", "warning");
+              return;
+          }
+           // Optional: Check if typed text matches target
+           // if (bioInput.value.trim() !== TARGET_PHRASE) {
+           //      if (!confirm(`Typed text "${bioInput.value}" doesn't match "${TARGET_PHRASE}". Submit anyway?`)) {
+           //          return;
+           //      }
+           // }
+
+
+          // --- Build Digraphs ---
+          const digraphs = [];
+          let invalidTimings = 0;
+          for (let i = 0; i + 1 < keyEvents.length; i++) {
+            const k1 = keyEvents[i], k2 = keyEvents[i + 1];
+
+            // Ensure both key up/down times are recorded and are numbers
+            if (k1.up === null || k2.up === null ||
+                typeof k1.down !== 'number' || typeof k1.up !== 'number' ||
+                typeof k2.down !== 'number' || typeof k2.up !== 'number') {
+                console.warn("Skipping digraph due to incomplete timing data:", k1, k2);
+                invalidTimings++;
+                continue;
+            }
+            // Basic sanity check on timings (e.g., up >= down)
+             if (k1.up < k1.down || k2.up < k2.down || k2.down < k1.down) {
+                 console.warn("Skipping digraph due to inconsistent timing:", k1, k2);
+                 invalidTimings++;
+                 continue;
+             }
+
+            // Ensure keys are single characters (or handle special keys appropriately)
+            if (k1.key.length !== 1 || k2.key.length !== 1) {
+                console.warn(`Skipping digraph with non-single char key: '${k1.key}' -> '${k2.key}'`);
+                invalidTimings++;
+                continue;
+            }
+
+
+            // Calculate features - Ensure valid numbers result
+            const features = [
+              k1.up - k1.down,      // H. K1 (Hold time)
+              k2.down - k1.down,    // DD K1->K2 (Down-Down latency)
+              k2.down - k1.up,      // UD K1->K2 (Up-Down latency - sometimes called Flight Time)
+              k2.up - k1.down,      // Release-Press Latency (alternative name)
+              k2.up - k1.up,        // UU K1->K2 (Up-Up latency)
+            ];
+
+            // Check if any feature is NaN or negative where it shouldn't be (e.g., hold time)
+            if (features.some(isNaN) || features[0] < 0) {
+                 console.warn("Skipping digraph due to invalid calculated features:", k1, k2, features);
+                 invalidTimings++;
+                 continue;
+            }
+
+
+            digraphs.push({
+              key1: k1.key,
+              key2: k2.key,
+              features: features,
+            });
+          } // end for loop
+
+          if (digraphs.length === 0) {
+              const message = invalidTimings > 0
+                 ? `No valid typing data could be extracted. Found ${invalidTimings} timing issues.`
+                 : "No typing data (digraphs) generated. Please type more.";
+              showAlert(message, "warning");
+              return;
+          }
+          if (invalidTimings > 0) {
+             showAlert(`Warning: Skipped ${invalidTimings} key pairs due to timing or key issues. Proceeding with ${digraphs.length} valid digraphs.`, 'warning');
+          }
+
+
+          // --- Send to Server ---
+          toggleLoading(submitBtn, true);
+          try {
+              const response = await fetch("/predict", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({
+                      participant: p,
+                      session: s,
+                      digraphs: digraphs,
+                  }),
+              });
+
+              const result = await response.json(); // Try to parse JSON regardless of status
+
+              if (!response.ok) {
+                  // Server returned an error status (4xx, 5xx)
+                  const errorMsg = result.error || `Server error: ${response.status}`;
+                  console.error("Prediction request failed:", response.status, result);
+                  displayResult(`Submit Failed: ${errorMsg}`, true, result.details); // Pass details if available
+              } else if (result.error) {
+                  // Server returned 2xx status but with an error field (e.g., validation)
+                   console.error("Prediction returned error:", result.error);
+                   displayResult(`Submit Error: ${result.error}`, true, result.data); // Pass data as details
+              } else if (response.status === 207) {
+                    // Multi-Status (e.g., prediction failed but save worked, or vice versa)
+                    console.warn("Prediction/Save resulted in mixed status:", result.data);
+                    let message = `Prediction Index: ${result.data.predicted_index ?? 'N/A'}. `;
+                    if(result.data.prediction_error) message += `Prediction Error: ${result.data.prediction_error}. `;
+                    if(result.data.save_error) message += `Save Error: ${result.data.save_error}. `;
+                    else if(result.data.saved) message += `(✓ Data Saved). `;
+                    displayResult(message, false, result.data); // Display as warning/info
+              }
+               else {
+                  // Success (200 OK)
+                  console.log("Prediction successful:", result.data);
+                  const predictionText = `Prediction Index: ${result.data.predicted_index ?? 'Unknown'}`;
+                   // You would typically map predicted_index to a user ID here if needed
+                  displayResult(predictionText, false, result.data);
+
+                  // Refresh sessions list in case a new session was just added
+                  if (newSessionInput.value.trim() === String(s)) {
+                      loadSessions(p); // Reload sessions for the current participant
+                      newSessionInput.value = ''; // Clear the 'new session' input after successful submission
+                      newSessionInput.placeholder = `Next: ${s + 1}`;
+                  }
+                   setupTypingListeners(); // Reset for next typing input
+              }
+
+          } catch (error) {
+              console.error("Network or unexpected error during submission:", error);
+              displayResult(`Submit Failed: Network error or unexpected issue - ${error.message}`, true);
+          } finally {
+              toggleLoading(submitBtn, false);
+              checkFormReadiness(); // Re-evaluate button states
+          }
+        });
+
+        // --- Initialisation ---
+        loadParticipants();
+        setupTypingListeners(); // Setup listeners initially, but input is disabled
+        checkFormReadiness();   // Set initial disabled states
+
+      }); // End DOMContentLoaded
     </script>
   </body>
 </html>
