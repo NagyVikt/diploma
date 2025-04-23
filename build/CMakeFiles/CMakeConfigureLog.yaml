@@ -1,0 +1,1454 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+      Build started 4/22/2025 10:31:07 AM.
+      
+      Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.54
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/3.31.5/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+      Build started 4/22/2025 10:31:09 AM.
+      
+      Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.05
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/3.31.5/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-5vnegp"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-5vnegp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-5vnegp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_87bb9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 10:31:11 AM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vnegp\\cmTC_87bb9.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_87bb9.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vnegp\\Debug\\".
+          Creating directory "cmTC_87bb9.dir\\Debug\\cmTC_87bb9.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_87bb9.dir\\Debug\\cmTC_87bb9.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_87bb9.dir\\Debug\\cmTC_87bb9.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_87bb9.dir\\Debug\\\\" /Fd"cmTC_87bb9.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34809 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_87bb9.dir\\Debug\\\\" /Fd"cmTC_87bb9.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vnegp\\Debug\\cmTC_87bb9.exe" /INCREMENTAL /ILK:"cmTC_87bb9.dir\\Debug\\cmTC_87bb9.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-5vnegp/Debug/cmTC_87bb9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-5vnegp/Debug/cmTC_87bb9.lib" /MACHINE:X64  /machine:x64 cmTC_87bb9.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_87bb9.vcxproj -> C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vnegp\\Debug\\cmTC_87bb9.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vnegp\\Debug\\cmTC_87bb9.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_87bb9.dir\\Debug\\cmTC_87bb9.tlog\\cmTC_87bb9.write.1u.tlog" "cmTC_87bb9.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vnegp\\Debug\\cmTC_87bb9.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_87bb9.dir\\Debug\\cmTC_87bb9.tlog\\cmTC_87bb9.write.1u.tlog" "cmTC_87bb9.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vnegp\\Debug\\cmTC_87bb9.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_87bb9.dir\\Debug\\cmTC_87bb9.tlog\\cmTC_87bb9.write.1u.tlog" "cmTC_87bb9.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_87bb9.dir\\Debug\\cmTC_87bb9.tlog\\unsuccessfulbuild".
+          Touching "cmTC_87bb9.dir\\Debug\\cmTC_87bb9.tlog\\cmTC_87bb9.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vnegp\\cmTC_87bb9.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.98
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.43.34809.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-q32gdi"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-q32gdi"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-q32gdi'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_be8a5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 10:31:12 AM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q32gdi\\cmTC_be8a5.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_be8a5.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q32gdi\\Debug\\".
+          Creating directory "cmTC_be8a5.dir\\Debug\\cmTC_be8a5.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_be8a5.dir\\Debug\\cmTC_be8a5.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_be8a5.dir\\Debug\\cmTC_be8a5.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_be8a5.dir\\Debug\\\\" /Fd"cmTC_be8a5.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34809 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_be8a5.dir\\Debug\\\\" /Fd"cmTC_be8a5.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q32gdi\\Debug\\cmTC_be8a5.exe" /INCREMENTAL /ILK:"cmTC_be8a5.dir\\Debug\\cmTC_be8a5.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-q32gdi/Debug/cmTC_be8a5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-q32gdi/Debug/cmTC_be8a5.lib" /MACHINE:X64  /machine:x64 cmTC_be8a5.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_be8a5.vcxproj -> C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q32gdi\\Debug\\cmTC_be8a5.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q32gdi\\Debug\\cmTC_be8a5.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_be8a5.dir\\Debug\\cmTC_be8a5.tlog\\cmTC_be8a5.write.1u.tlog" "cmTC_be8a5.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q32gdi\\Debug\\cmTC_be8a5.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_be8a5.dir\\Debug\\cmTC_be8a5.tlog\\cmTC_be8a5.write.1u.tlog" "cmTC_be8a5.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q32gdi\\Debug\\cmTC_be8a5.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_be8a5.dir\\Debug\\cmTC_be8a5.tlog\\cmTC_be8a5.write.1u.tlog" "cmTC_be8a5.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_be8a5.dir\\Debug\\cmTC_be8a5.tlog\\unsuccessfulbuild".
+          Touching "cmTC_be8a5.dir\\Debug\\cmTC_be8a5.tlog\\cmTC_be8a5.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q32gdi\\cmTC_be8a5.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.00
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.43.34809.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/pybind11-src/tools/pybind11Common.cmake:276 (check_cxx_compiler_flag)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/pybind11-src/tools/pybind11Common.cmake:340 (_pybind11_return_if_cxx_and_linker_flags_work)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/pybind11-src/tools/pybind11Common.cmake:385 (_pybind11_generate_lto)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/pybind11-src/CMakeLists.txt:210 (include)"
+    checks:
+      - "Performing Test HAS_MSVC_GL_LTCG"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-gnr83c"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-gnr83c"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: ""
+    buildResult:
+      variable: "HAS_MSVC_GL_LTCG"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-gnr83c'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2e2a1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 10:32:45 AM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gnr83c\\cmTC_2e2a1.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_2e2a1.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gnr83c\\Debug\\".
+          Creating directory "cmTC_2e2a1.dir\\Debug\\cmTC_2e2a1.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_2e2a1.dir\\Debug\\cmTC_2e2a1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_2e2a1.dir\\Debug\\cmTC_2e2a1.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_2e2a1.dir\\Debug\\\\" /Fd"cmTC_2e2a1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gnr83c\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34809 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_2e2a1.dir\\Debug\\\\" /Fd"cmTC_2e2a1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gnr83c\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gnr83c\\Debug\\cmTC_2e2a1.exe" /INCREMENTAL /ILK:"cmTC_2e2a1.dir\\Debug\\cmTC_2e2a1.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" "-LTCG" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-gnr83c/Debug/cmTC_2e2a1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-gnr83c/Debug/cmTC_2e2a1.lib" /MACHINE:X64  /machine:x64 cmTC_2e2a1.dir\\Debug\\src.obj
+        LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gnr83c\\cmTC_2e2a1.vcxproj]
+          Generating code
+          Finished generating code
+          cmTC_2e2a1.vcxproj -> C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gnr83c\\Debug\\cmTC_2e2a1.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gnr83c\\Debug\\cmTC_2e2a1.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_2e2a1.dir\\Debug\\cmTC_2e2a1.tlog\\cmTC_2e2a1.write.1u.tlog" "cmTC_2e2a1.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gnr83c\\Debug\\cmTC_2e2a1.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_2e2a1.dir\\Debug\\cmTC_2e2a1.tlog\\cmTC_2e2a1.write.1u.tlog" "cmTC_2e2a1.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gnr83c\\Debug\\cmTC_2e2a1.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_2e2a1.dir\\Debug\\cmTC_2e2a1.tlog\\cmTC_2e2a1.write.1u.tlog" "cmTC_2e2a1.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_2e2a1.dir\\Debug\\cmTC_2e2a1.tlog\\unsuccessfulbuild".
+          Touching "cmTC_2e2a1.dir\\Debug\\cmTC_2e2a1.tlog\\cmTC_2e2a1.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gnr83c\\cmTC_2e2a1.vcxproj" (default targets).
+        
+        Build succeeded.
+        
+        "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gnr83c\\cmTC_2e2a1.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gnr83c\\cmTC_2e2a1.vcxproj]
+        
+            1 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.04
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/check_if_sse4_instructions_executable_on_host.cmake:13 (try_compile)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/set_compiler_specific_options.cmake:13 (include)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/CMakeLists.txt:33 (include)"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/test_for_sse4"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-build/dlib/sse4_test_build"
+    buildResult:
+      variable: "test_for_sse4_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-build/dlib/sse4_test_build'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 12:16:43 PM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\sse4_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\sse4_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\sse4_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "x64\\Debug\\ZERO_CHECK\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\".
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          1>Checking Build System
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\sse4_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        PrepareForBuild:
+          Creating directory "x64\\Debug\\ALL_BUILD\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "x64\\Debug\\ALL_BUILD\\ALL_BUILD.tlog\\".
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ALL_BUILD\\ALL_BUILD.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "x64\\Debug\\ALL_BUILD\\ALL_BUILD.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          Building Custom Rule C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/test_for_sse4/CMakeLists.txt
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ALL_BUILD\\ALL_BUILD.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ALL_BUILD\\ALL_BUILD.tlog\\ALL_BUILD.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\sse4_test_build\\ALL_BUILD.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.53
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/check_if_avx_instructions_executable_on_host.cmake:13 (try_compile)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/set_compiler_specific_options.cmake:17 (include)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/CMakeLists.txt:33 (include)"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/test_for_avx"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-build/dlib/avx_test_build"
+    buildResult:
+      variable: "test_for_avx_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-build/dlib/avx_test_build'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 12:16:52 PM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\avx_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\avx_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\avx_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "x64\\Debug\\ZERO_CHECK\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\".
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          1>Checking Build System
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\avx_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        PrepareForBuild:
+          Creating directory "x64\\Debug\\ALL_BUILD\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "x64\\Debug\\ALL_BUILD\\ALL_BUILD.tlog\\".
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ALL_BUILD\\ALL_BUILD.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "x64\\Debug\\ALL_BUILD\\ALL_BUILD.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          Building Custom Rule C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/test_for_avx/CMakeLists.txt
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ALL_BUILD\\ALL_BUILD.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ALL_BUILD\\ALL_BUILD.tlog\\ALL_BUILD.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\avx_test_build\\ALL_BUILD.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.58
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/set_compiler_specific_options.cmake:21 (include)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/CMakeLists.txt:33 (include)"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 12:16:53 PM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "x64\\Debug\\ZERO_CHECK\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\".
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          1>Checking Build System
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "neon_test.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\".
+          Creating directory "neon_test.dir\\Debug\\neon_test.tlog\\".
+        InitializeBuildStatus:
+          Creating "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          Building Custom Rule C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon/CMakeLists.txt
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): error C1189: #error:  "No NEON" [C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): error C1189: #error:  "No NEON" [C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.94
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:262 (check_include_file)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/set_compiler_specific_options.cmake:91 (check_type_size)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/CMakeLists.txt:33 (include)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-drrfnu"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-drrfnu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-drrfnu'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fa74f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 12:16:54 PM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-drrfnu\\cmTC_fa74f.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_fa74f.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-drrfnu\\Debug\\".
+          Creating directory "cmTC_fa74f.dir\\Debug\\cmTC_fa74f.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_fa74f.dir\\Debug\\cmTC_fa74f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_fa74f.dir\\Debug\\cmTC_fa74f.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fa74f.dir\\Debug\\\\" /Fd"cmTC_fa74f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-drrfnu\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34809 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fa74f.dir\\Debug\\\\" /Fd"cmTC_fa74f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-drrfnu\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-drrfnu\\Debug\\cmTC_fa74f.exe" /INCREMENTAL /ILK:"cmTC_fa74f.dir\\Debug\\cmTC_fa74f.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-drrfnu/Debug/cmTC_fa74f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-drrfnu/Debug/cmTC_fa74f.lib" /MACHINE:X64  /machine:x64 cmTC_fa74f.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_fa74f.vcxproj -> C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-drrfnu\\Debug\\cmTC_fa74f.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-drrfnu\\Debug\\cmTC_fa74f.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_fa74f.dir\\Debug\\cmTC_fa74f.tlog\\cmTC_fa74f.write.1u.tlog" "cmTC_fa74f.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-drrfnu\\Debug\\cmTC_fa74f.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_fa74f.dir\\Debug\\cmTC_fa74f.tlog\\cmTC_fa74f.write.1u.tlog" "cmTC_fa74f.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-drrfnu\\Debug\\cmTC_fa74f.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_fa74f.dir\\Debug\\cmTC_fa74f.tlog\\cmTC_fa74f.write.1u.tlog" "cmTC_fa74f.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_fa74f.dir\\Debug\\cmTC_fa74f.tlog\\unsuccessfulbuild".
+          Touching "cmTC_fa74f.dir\\Debug\\cmTC_fa74f.tlog\\cmTC_fa74f.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-drrfnu\\cmTC_fa74f.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.26
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:263 (check_include_file)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/set_compiler_specific_options.cmake:91 (check_type_size)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/CMakeLists.txt:33 (include)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-lc5cnu"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-lc5cnu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-lc5cnu'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f408f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 12:16:56 PM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lc5cnu\\cmTC_f408f.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_f408f.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lc5cnu\\Debug\\".
+          Creating directory "cmTC_f408f.dir\\Debug\\cmTC_f408f.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_f408f.dir\\Debug\\cmTC_f408f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_f408f.dir\\Debug\\cmTC_f408f.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f408f.dir\\Debug\\\\" /Fd"cmTC_f408f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lc5cnu\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34809 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f408f.dir\\Debug\\\\" /Fd"cmTC_f408f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lc5cnu\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lc5cnu\\Debug\\cmTC_f408f.exe" /INCREMENTAL /ILK:"cmTC_f408f.dir\\Debug\\cmTC_f408f.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-lc5cnu/Debug/cmTC_f408f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-lc5cnu/Debug/cmTC_f408f.lib" /MACHINE:X64  /machine:x64 cmTC_f408f.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_f408f.vcxproj -> C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lc5cnu\\Debug\\cmTC_f408f.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lc5cnu\\Debug\\cmTC_f408f.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_f408f.dir\\Debug\\cmTC_f408f.tlog\\cmTC_f408f.write.1u.tlog" "cmTC_f408f.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lc5cnu\\Debug\\cmTC_f408f.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_f408f.dir\\Debug\\cmTC_f408f.tlog\\cmTC_f408f.write.1u.tlog" "cmTC_f408f.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lc5cnu\\Debug\\cmTC_f408f.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_f408f.dir\\Debug\\cmTC_f408f.tlog\\cmTC_f408f.write.1u.tlog" "cmTC_f408f.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_f408f.dir\\Debug\\cmTC_f408f.tlog\\unsuccessfulbuild".
+          Touching "cmTC_f408f.dir\\Debug\\cmTC_f408f.tlog\\cmTC_f408f.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lc5cnu\\cmTC_f408f.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.31
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:264 (check_include_file)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/set_compiler_specific_options.cmake:91 (check_type_size)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/CMakeLists.txt:33 (include)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-7qym66"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-7qym66"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-7qym66'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7c2f4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 12:16:57 PM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7qym66\\cmTC_7c2f4.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_7c2f4.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7qym66\\Debug\\".
+          Creating directory "cmTC_7c2f4.dir\\Debug\\cmTC_7c2f4.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_7c2f4.dir\\Debug\\cmTC_7c2f4.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_7c2f4.dir\\Debug\\cmTC_7c2f4.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7c2f4.dir\\Debug\\\\" /Fd"cmTC_7c2f4.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7qym66\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34809 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7c2f4.dir\\Debug\\\\" /Fd"cmTC_7c2f4.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7qym66\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7qym66\\Debug\\cmTC_7c2f4.exe" /INCREMENTAL /ILK:"cmTC_7c2f4.dir\\Debug\\cmTC_7c2f4.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-7qym66/Debug/cmTC_7c2f4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-7qym66/Debug/cmTC_7c2f4.lib" /MACHINE:X64  /machine:x64 cmTC_7c2f4.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_7c2f4.vcxproj -> C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7qym66\\Debug\\cmTC_7c2f4.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7qym66\\Debug\\cmTC_7c2f4.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_7c2f4.dir\\Debug\\cmTC_7c2f4.tlog\\cmTC_7c2f4.write.1u.tlog" "cmTC_7c2f4.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7qym66\\Debug\\cmTC_7c2f4.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_7c2f4.dir\\Debug\\cmTC_7c2f4.tlog\\cmTC_7c2f4.write.1u.tlog" "cmTC_7c2f4.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7qym66\\Debug\\cmTC_7c2f4.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_7c2f4.dir\\Debug\\cmTC_7c2f4.tlog\\cmTC_7c2f4.write.1u.tlog" "cmTC_7c2f4.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_7c2f4.dir\\Debug\\cmTC_7c2f4.tlog\\unsuccessfulbuild".
+          Touching "cmTC_7c2f4.dir\\Debug\\cmTC_7c2f4.tlog\\cmTC_7c2f4.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7qym66\\cmTC_7c2f4.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.21
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/set_compiler_specific_options.cmake:91 (check_type_size)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/CMakeLists.txt:33 (include)"
+    checks:
+      - "Check size of void*"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-6xq3uz"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-6xq3uz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+    buildResult:
+      variable: "HAVE_SIZE_OF_VOID_PTR"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-6xq3uz'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_bed8b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 12:16:59 PM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6xq3uz\\cmTC_bed8b.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_bed8b.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6xq3uz\\Debug\\".
+          Creating directory "cmTC_bed8b.dir\\Debug\\cmTC_bed8b.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_bed8b.dir\\Debug\\cmTC_bed8b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_bed8b.dir\\Debug\\cmTC_bed8b.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bed8b.dir\\Debug\\\\" /Fd"cmTC_bed8b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6xq3uz\\SIZE_OF_VOID_PTR.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34809 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bed8b.dir\\Debug\\\\" /Fd"cmTC_bed8b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6xq3uz\\SIZE_OF_VOID_PTR.c"
+          SIZE_OF_VOID_PTR.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6xq3uz\\Debug\\cmTC_bed8b.exe" /INCREMENTAL /ILK:"cmTC_bed8b.dir\\Debug\\cmTC_bed8b.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-6xq3uz/Debug/cmTC_bed8b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-6xq3uz/Debug/cmTC_bed8b.lib" /MACHINE:X64  /machine:x64 cmTC_bed8b.dir\\Debug\\SIZE_OF_VOID_PTR.obj
+          cmTC_bed8b.vcxproj -> C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6xq3uz\\Debug\\cmTC_bed8b.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6xq3uz\\Debug\\cmTC_bed8b.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_bed8b.dir\\Debug\\cmTC_bed8b.tlog\\cmTC_bed8b.write.1u.tlog" "cmTC_bed8b.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6xq3uz\\Debug\\cmTC_bed8b.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_bed8b.dir\\Debug\\cmTC_bed8b.tlog\\cmTC_bed8b.write.1u.tlog" "cmTC_bed8b.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6xq3uz\\Debug\\cmTC_bed8b.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_bed8b.dir\\Debug\\cmTC_bed8b.tlog\\cmTC_bed8b.write.1u.tlog" "cmTC_bed8b.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_bed8b.dir\\Debug\\cmTC_bed8b.tlog\\unsuccessfulbuild".
+          Touching "cmTC_bed8b.dir\\Debug\\cmTC_bed8b.tlog\\cmTC_bed8b.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6xq3uz\\cmTC_bed8b.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.32
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindBLAS.cmake:379 (check_function_exists)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindBLAS.cmake:423 (check_blas_libraries)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/find_blas.cmake:431 (find_package)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/CMakeLists.txt:588 (include)"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-9m1hwo"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-9m1hwo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "BLAS_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-9m1hwo'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a2a01.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 12:17:01 PM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9m1hwo\\cmTC_a2a01.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_a2a01.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9m1hwo\\Debug\\".
+          Creating directory "cmTC_a2a01.dir\\Debug\\cmTC_a2a01.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_a2a01.dir\\Debug\\cmTC_a2a01.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_a2a01.dir\\Debug\\cmTC_a2a01.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sgemm_ /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a2a01.dir\\Debug\\\\" /Fd"cmTC_a2a01.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9m1hwo\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34809 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sgemm_ /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a2a01.dir\\Debug\\\\" /Fd"cmTC_a2a01.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9m1hwo\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9m1hwo\\Debug\\cmTC_a2a01.exe" /INCREMENTAL /ILK:"cmTC_a2a01.dir\\Debug\\cmTC_a2a01.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-9m1hwo/Debug/cmTC_a2a01.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-9m1hwo/Debug/cmTC_a2a01.lib" /MACHINE:X64  /machine:x64 cmTC_a2a01.dir\\Debug\\CheckFunctionExists.obj
+          cmTC_a2a01.vcxproj -> C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9m1hwo\\Debug\\cmTC_a2a01.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9m1hwo\\Debug\\cmTC_a2a01.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_a2a01.dir\\Debug\\cmTC_a2a01.tlog\\cmTC_a2a01.write.1u.tlog" "cmTC_a2a01.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9m1hwo\\Debug\\cmTC_a2a01.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_a2a01.dir\\Debug\\cmTC_a2a01.tlog\\cmTC_a2a01.write.1u.tlog" "cmTC_a2a01.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9m1hwo\\Debug\\cmTC_a2a01.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_a2a01.dir\\Debug\\cmTC_a2a01.tlog\\cmTC_a2a01.write.1u.tlog" "cmTC_a2a01.dir\\Debug\\vcpkg.applocal.log"
+          C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9m1hwo\\Debug\\openblas.dll
+        FinalizeBuildStatus:
+          Deleting file "cmTC_a2a01.dir\\Debug\\cmTC_a2a01.tlog\\unsuccessfulbuild".
+          Touching "cmTC_a2a01.dir\\Debug\\cmTC_a2a01.tlog\\cmTC_a2a01.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9m1hwo\\cmTC_a2a01.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.33
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindLAPACK.cmake:327 (_lapack_find_dependency)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/find_blas.cmake:436 (find_package)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/CMakeLists.txt:588 (include)"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-z841gs"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-z841gs"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-z841gs'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4020d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 12:17:02 PM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z841gs\\cmTC_4020d.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_4020d.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z841gs\\Debug\\".
+          Creating directory "cmTC_4020d.dir\\Debug\\cmTC_4020d.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_4020d.dir\\Debug\\cmTC_4020d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_4020d.dir\\Debug\\cmTC_4020d.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4020d.dir\\Debug\\\\" /Fd"cmTC_4020d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z841gs\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34809 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4020d.dir\\Debug\\\\" /Fd"cmTC_4020d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z841gs\\src.c"
+          src.c
+        C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z841gs\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z841gs\\cmTC_4020d.vcxproj]
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z841gs\\cmTC_4020d.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z841gs\\cmTC_4020d.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z841gs\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z841gs\\cmTC_4020d.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.40
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindLAPACK.cmake:327 (_lapack_find_dependency)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/find_blas.cmake:436 (find_package)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/CMakeLists.txt:588 (include)"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-2lfyhm"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-2lfyhm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-2lfyhm'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2f2e0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 12:17:03 PM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lfyhm\\cmTC_2f2e0.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_2f2e0.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lfyhm\\Debug\\".
+          Creating directory "cmTC_2f2e0.dir\\Debug\\cmTC_2f2e0.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_2f2e0.dir\\Debug\\cmTC_2f2e0.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_2f2e0.dir\\Debug\\cmTC_2f2e0.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2f2e0.dir\\Debug\\\\" /Fd"cmTC_2f2e0.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lfyhm\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34809 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2f2e0.dir\\Debug\\\\" /Fd"cmTC_2f2e0.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lfyhm\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lfyhm\\Debug\\cmTC_2f2e0.exe" /INCREMENTAL /ILK:"cmTC_2f2e0.dir\\Debug\\cmTC_2f2e0.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-2lfyhm/Debug/cmTC_2f2e0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-2lfyhm/Debug/cmTC_2f2e0.lib" /MACHINE:X64  /machine:x64 cmTC_2f2e0.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lfyhm\\cmTC_2f2e0.vcxproj]
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lfyhm\\cmTC_2f2e0.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lfyhm\\cmTC_2f2e0.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lfyhm\\cmTC_2f2e0.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.54
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindLAPACK.cmake:327 (_lapack_find_dependency)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/find_blas.cmake:436 (find_package)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/CMakeLists.txt:588 (include)"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-bxr1di"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-bxr1di"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-bxr1di'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_63673.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 12:17:04 PM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bxr1di\\cmTC_63673.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_63673.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bxr1di\\Debug\\".
+          Creating directory "cmTC_63673.dir\\Debug\\cmTC_63673.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_63673.dir\\Debug\\cmTC_63673.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_63673.dir\\Debug\\cmTC_63673.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_63673.dir\\Debug\\\\" /Fd"cmTC_63673.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bxr1di\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34809 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_63673.dir\\Debug\\\\" /Fd"cmTC_63673.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bxr1di\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bxr1di\\Debug\\cmTC_63673.exe" /INCREMENTAL /ILK:"cmTC_63673.dir\\Debug\\cmTC_63673.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-bxr1di/Debug/cmTC_63673.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-bxr1di/Debug/cmTC_63673.lib" /MACHINE:X64  /machine:x64 cmTC_63673.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bxr1di\\cmTC_63673.vcxproj]
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bxr1di\\cmTC_63673.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bxr1di\\cmTC_63673.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bxr1di\\cmTC_63673.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.55
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindLAPACK.cmake:220 (check_function_exists)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindLAPACK.cmake:399 (check_lapack_libraries)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/find_blas.cmake:436 (find_package)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/CMakeLists.txt:588 (include)"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-frd6q1"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-frd6q1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "LAPACK_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-frd6q1'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f1430.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 12:17:05 PM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-frd6q1\\cmTC_f1430.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_f1430.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-frd6q1\\Debug\\".
+          Creating directory "cmTC_f1430.dir\\Debug\\cmTC_f1430.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_f1430.dir\\Debug\\cmTC_f1430.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_f1430.dir\\Debug\\cmTC_f1430.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=cheev_ /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f1430.dir\\Debug\\\\" /Fd"cmTC_f1430.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-frd6q1\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34809 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=cheev_ /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f1430.dir\\Debug\\\\" /Fd"cmTC_f1430.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-frd6q1\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-frd6q1\\Debug\\cmTC_f1430.exe" /INCREMENTAL /ILK:"cmTC_f1430.dir\\Debug\\cmTC_f1430.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-frd6q1/Debug/cmTC_f1430.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-frd6q1/Debug/cmTC_f1430.lib" /MACHINE:X64  /machine:x64 cmTC_f1430.dir\\Debug\\CheckFunctionExists.obj
+          cmTC_f1430.vcxproj -> C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-frd6q1\\Debug\\cmTC_f1430.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-frd6q1\\Debug\\cmTC_f1430.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_f1430.dir\\Debug\\cmTC_f1430.tlog\\cmTC_f1430.write.1u.tlog" "cmTC_f1430.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-frd6q1\\Debug\\cmTC_f1430.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_f1430.dir\\Debug\\cmTC_f1430.tlog\\cmTC_f1430.write.1u.tlog" "cmTC_f1430.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-frd6q1\\Debug\\cmTC_f1430.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_f1430.dir\\Debug\\cmTC_f1430.tlog\\cmTC_f1430.write.1u.tlog" "cmTC_f1430.dir\\Debug\\vcpkg.applocal.log"
+          C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-frd6q1\\Debug\\liblapack.dll
+          C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-frd6q1\\Debug\\libgcc_s_seh-1.dll
+          C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-frd6q1\\Debug\\libwinpthread-1.dll
+          C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-frd6q1\\Debug\\libgfortran-5.dll
+          C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-frd6q1\\Debug\\libquadmath-0.dll
+          C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-frd6q1\\Debug\\openblas.dll
+        FinalizeBuildStatus:
+          Deleting file "cmTC_f1430.dir\\Debug\\cmTC_f1430.tlog\\unsuccessfulbuild".
+          Touching "cmTC_f1430.dir\\Debug\\cmTC_f1430.tlog\\cmTC_f1430.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-frd6q1\\cmTC_f1430.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.57
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/find_blas.cmake:451 (check_function_exists)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/CMakeLists.txt:588 (include)"
+    checks:
+      - "Looking for sgesv"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-071tlj"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-071tlj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "LAPACK_FOUND_C_UNMANGLED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-071tlj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4be60.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 12:17:07 PM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-071tlj\\cmTC_4be60.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_4be60.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-071tlj\\Debug\\".
+          Creating directory "cmTC_4be60.dir\\Debug\\cmTC_4be60.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_4be60.dir\\Debug\\cmTC_4be60.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_4be60.dir\\Debug\\cmTC_4be60.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sgesv /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4be60.dir\\Debug\\\\" /Fd"cmTC_4be60.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-071tlj\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34809 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sgesv /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4be60.dir\\Debug\\\\" /Fd"cmTC_4be60.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-071tlj\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-071tlj\\Debug\\cmTC_4be60.exe" /INCREMENTAL /ILK:"cmTC_4be60.dir\\Debug\\cmTC_4be60.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-071tlj/Debug/cmTC_4be60.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-071tlj/Debug/cmTC_4be60.lib" /MACHINE:X64  /machine:x64 cmTC_4be60.dir\\Debug\\CheckFunctionExists.obj
+        CheckFunctionExists.obj : error LNK2019: unresolved external symbol sgesv referenced in function main [C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-071tlj\\cmTC_4be60.vcxproj]
+        C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-071tlj\\Debug\\cmTC_4be60.exe : fatal error LNK1120: 1 unresolved externals [C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-071tlj\\cmTC_4be60.vcxproj]
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-071tlj\\cmTC_4be60.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-071tlj\\cmTC_4be60.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          CheckFunctionExists.obj : error LNK2019: unresolved external symbol sgesv referenced in function main [C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-071tlj\\cmTC_4be60.vcxproj]
+          C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-071tlj\\Debug\\cmTC_4be60.exe : fatal error LNK1120: 1 unresolved externals [C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-071tlj\\cmTC_4be60.vcxproj]
+        
+            0 Warning(s)
+            2 Error(s)
+        
+        Time Elapsed 00:00:00.61
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/find_blas.cmake:452 (check_function_exists)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/CMakeLists.txt:588 (include)"
+    checks:
+      - "Looking for sgesv_"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-hikcti"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-hikcti"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "LAPACK_FOUND_C_MANGLED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-hikcti'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_343eb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 12:17:08 PM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hikcti\\cmTC_343eb.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_343eb.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hikcti\\Debug\\".
+          Creating directory "cmTC_343eb.dir\\Debug\\cmTC_343eb.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_343eb.dir\\Debug\\cmTC_343eb.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_343eb.dir\\Debug\\cmTC_343eb.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sgesv_ /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_343eb.dir\\Debug\\\\" /Fd"cmTC_343eb.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hikcti\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34809 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sgesv_ /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_343eb.dir\\Debug\\\\" /Fd"cmTC_343eb.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hikcti\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hikcti\\Debug\\cmTC_343eb.exe" /INCREMENTAL /ILK:"cmTC_343eb.dir\\Debug\\cmTC_343eb.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-hikcti/Debug/cmTC_343eb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/laura/keystrokeDynamics2FA/build/CMakeFiles/CMakeScratch/TryCompile-hikcti/Debug/cmTC_343eb.lib" /MACHINE:X64  /machine:x64 cmTC_343eb.dir\\Debug\\CheckFunctionExists.obj
+          cmTC_343eb.vcxproj -> C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hikcti\\Debug\\cmTC_343eb.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hikcti\\Debug\\cmTC_343eb.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_343eb.dir\\Debug\\cmTC_343eb.tlog\\cmTC_343eb.write.1u.tlog" "cmTC_343eb.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hikcti\\Debug\\cmTC_343eb.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_343eb.dir\\Debug\\cmTC_343eb.tlog\\cmTC_343eb.write.1u.tlog" "cmTC_343eb.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hikcti\\Debug\\cmTC_343eb.exe" "C:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_343eb.dir\\Debug\\cmTC_343eb.tlog\\cmTC_343eb.write.1u.tlog" "cmTC_343eb.dir\\Debug\\vcpkg.applocal.log"
+          C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hikcti\\Debug\\liblapack.dll
+          C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hikcti\\Debug\\libgcc_s_seh-1.dll
+          C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hikcti\\Debug\\libwinpthread-1.dll
+          C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hikcti\\Debug\\libgfortran-5.dll
+          C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hikcti\\Debug\\libquadmath-0.dll
+          C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hikcti\\Debug\\openblas.dll
+        FinalizeBuildStatus:
+          Deleting file "cmTC_343eb.dir\\Debug\\cmTC_343eb.tlog\\unsuccessfulbuild".
+          Touching "cmTC_343eb.dir\\Debug\\cmTC_343eb.tlog\\cmTC_343eb.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hikcti\\cmTC_343eb.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.64
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/check_if_sse4_instructions_executable_on_host.cmake:13 (try_compile)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/set_compiler_specific_options.cmake:13 (include)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/CMakeLists.txt:33 (include)"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/test_for_sse4"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-build/dlib/sse4_test_build"
+    buildResult:
+      variable: "test_for_sse4_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-build/dlib/sse4_test_build'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 1:45:17 PM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\sse4_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\sse4_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\sse4_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\sse4_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ALL_BUILD\\ALL_BUILD.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "x64\\Debug\\ALL_BUILD\\ALL_BUILD.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ALL_BUILD\\ALL_BUILD.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ALL_BUILD\\ALL_BUILD.tlog\\ALL_BUILD.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\sse4_test_build\\ALL_BUILD.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.28
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/check_if_avx_instructions_executable_on_host.cmake:13 (try_compile)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/set_compiler_specific_options.cmake:17 (include)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/CMakeLists.txt:33 (include)"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/test_for_avx"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-build/dlib/avx_test_build"
+    buildResult:
+      variable: "test_for_avx_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-build/dlib/avx_test_build'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 1:45:19 PM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\avx_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\avx_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\avx_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\avx_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ALL_BUILD\\ALL_BUILD.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "x64\\Debug\\ALL_BUILD\\ALL_BUILD.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ALL_BUILD\\ALL_BUILD.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ALL_BUILD\\ALL_BUILD.tlog\\ALL_BUILD.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\avx_test_build\\ALL_BUILD.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.28
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/set_compiler_specific_options.cmake:21 (include)"
+      - "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/CMakeLists.txt:33 (include)"
+    directories:
+      source: "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/test_for_neon"
+      binary: "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-build/dlib/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-build/dlib/neon_test_build'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 4/22/2025 1:45:20 PM.
+        
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        InitializeBuildStatus:
+          Creating "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        FinalizeBuildStatus:
+          Deleting file "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\unsuccessfulbuild".
+          Touching "x64\\Debug\\ZERO_CHECK\\ZERO_CHECK.tlog\\ZERO_CHECK.lastbuildstate".
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ZERO_CHECK.vcxproj" (default targets).
+        Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (1) is building "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (3) on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        InitializeBuildStatus:
+          Touching "neon_test.dir\\Debug\\neon_test.tlog\\unsuccessfulbuild".
+        CustomBuild:
+          All outputs are up-to-date.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\laura\\keystrokeDynamics2FA\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\laura\\keystrokeDynamics2FA\\vcpkg\\installed\\x64-windows\\include" /Zi /nologo /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"neon_test.dir\\Debug\\\\" /Fd"C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\Debug\\neon_test.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp"
+          neon_test.cpp
+        C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): error C1189: #error:  "No NEON" [C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default targets) -- FAILED.
+        Done Building Project "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\ALL_BUILD.vcxproj" (default target) (1) ->
+        "C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj" (default target) (3) ->
+        (ClCompile target) -> 
+          C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-src\\dlib\\cmake_utils\\test_for_neon\\neon_test.cpp(3,1): error C1189: #error:  "No NEON" [C:\\Users\\laura\\keystrokeDynamics2FA\\build\\_deps\\dlib-build\\dlib\\neon_test_build\\neon_test.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.47
+        
+      exitCode: 1
+...

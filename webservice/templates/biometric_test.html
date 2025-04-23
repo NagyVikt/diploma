@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Keystroke Biometric Test</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding: 2rem;
+      }
+      #bioInput {
+        font-size: 1.2rem;
+      }
+      .result {
+        margin-top: 1rem;
+        font-weight: bold;
+      }
+      .history-table {
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <h1 class="mb-4">Keystroke Biometric Test</h1>
+
+    <div class="row mb-3 g-3">
+      <div class="col-md-4">
+        <label class="form-label">Participant</label>
+        <select id="participant" class="form-select"></select>
+      </div>
+      <div class="col-md-2 d-flex align-items-end">
+        <button id="newPartBtn" class="btn btn-outline-secondary w-100">
+          New
+        </button>
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">Session</label>
+        <select id="session" class="form-select"></select>
+        <input
+          type="number"
+          id="newSession"
+          class="form-control mt-2"
+          placeholder="Or new session #"
+        />
+      </div>
+      <div class="col-md-2 d-flex align-items-end">
+        <button id="loadSessions" class="btn btn-secondary w-100 mb-2">
+          Load
+        </button>
+        <button id="viewHistory" class="btn btn-info w-100">History</button>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Type “hello world” below:</label>
+      <input type="text" id="bioInput" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+      <button id="submitBtn" class="btn btn-primary me-2">Submit</button>
+      <button id="resetBtn" class="btn btn-outline-secondary">Reset</button>
+    </div>
+
+    <div id="result" class="result text-success"></div>
+    <div id="saved" class="text-success"></div>
+
+    <table class="table table-striped history-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>key1</th>
+          <th>key2</th>
+          <th>DU</th>
+          <th>DD</th>
+          <th>DU2</th>
+          <th>UD</th>
+          <th>UU</th>
+        </tr>
+      </thead>
+      <tbody id="historyBody"></tbody>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const partSel = document.getElementById("participant");
+        const newPart = document.getElementById("newPartBtn");
+        const sessSel = document.getElementById("session");
+        const newSess = document.getElementById("newSession");
+        const viewHist = document.getElementById("viewHistory");
+        const bioInput = document.getElementById("bioInput");
+        const submitBtn = document.getElementById("submitBtn");
+        const resetBtn = document.getElementById("resetBtn");
+        const result = document.getElementById("result");
+        const saved = document.getElementById("saved");
+        const histBody = document.getElementById("historyBody");
+        let events = [];
+
+        // helper: fetch sessions for p and update sessSel + newSess
+        function refreshSessions() {
+          const p = partSel.value;
+          sessSel.innerHTML = `<option value="">— select —</option>`;
+          newSess.value = "";
+          if (!p) return;
+
+          fetch(`/sessions?participant=${encodeURIComponent(p)}`)
+            .then((r) => r.json())
+            .then((js) => {
+              // build dropdown
+              const nums = js.sessions
+                .map((s) => parseInt(s, 10))
+                .filter((n) => !isNaN(n))
+                .sort((a, b) => a - b);
+
+              nums.forEach((n) => sessSel.add(new Option(n, n)));
+
+              // next session = max+1 or 1
+              const next = nums.length ? nums[nums.length - 1] + 1 : 1;
+              newSess.value = next;
+            })
+            .catch((err) => console.error("Failed to load sessions", err));
+        }
+
+        // initial participants load
+        fetch("/participants")
+          .then((r) => r.json())
+          .then((js) => {
+            partSel.innerHTML = `<option value="">— select —</option>`;
+            js.participants.forEach((p) => partSel.add(new Option(p, p)));
+          });
+
+        // whenever you pick an existing participant
+        partSel.addEventListener("change", refreshSessions);
+
+        // when creating a new one
+        newPart.addEventListener("click", () => {
+          const p = prompt("New participant ID (e.g. p0099):");
+          if (!p) return;
+          partSel.add(new Option(p, p), 1);
+          partSel.value = p;
+          refreshSessions(); // <-- auto-fetch (will be empty), so newSess→1
+        });
+
+        viewHist.addEventListener("click", () => {
+          const p = partSel.value;
+          const s = newSess.value || sessSel.value;
+          if (!p || !s) return alert("Participant & session required");
+          fetch(
+            `/history?participant=<span class="math-inline">\{p\}&session\=</span>{s}`
+          )
+            .then((r) => r.json())
+            .then((js) => {
+              histBody.innerHTML = "";
+              js.history.forEach((row, i) => {
+                const tr = document.createElement("tr");
+                tr.innerHTML = `
+                    <td><span class="math-inline">\{i \+ 1\}</td\>
+      <td\></span>{row.key1}</td><td><span class="math-inline">\{row\.key2\}</td\>
+      <td\></span>{row["DU.key1.key1"]}</td>
+                    <td><span class="math-inline">\{row\["DD\.key1\.key2"\]\}</td\>
+      <td\></span>{row["DU.key1.key2"]}</td>
+                    <td><span class="math-inline">\{row\["UD\.key1\.key2"\]\}</td\>
+      <td\></span>{row["UU.key1.key2"]}</td>
+                  `;
+                histBody.append(tr);
+              });
+            });
+        });
+
+        function setupListeners() {
+          events = [];
+          bioInput.value = "";
+          bioInput.focus();
+          bioInput.onkeydown = null;
+          bioInput.onkeyup = null;
+          bioInput.addEventListener("keydown", (e) => {
+            events.push({ key: e.key, down: performance.now(), up: null });
+          });
+          bioInput.addEventListener("keyup", (e) => {
+            for (let i = events.length - 1; i >= 0; --i) {
+              if (events[i].key === e.key && events[i].up === null) {
+                events[i].up = performance.now();
+                break;
+              }
+            }
+          });
+        }
+        setupListeners();
+
+        submitBtn.addEventListener("click", () => {
+          const p = partSel.value;
+          const s = parseInt(newSess.value || sessSel.value, 10);
+          if (!p || !s) return alert("Participant & session required");
+
+          // build digraphs
+          const digs = [];
+          for (let i = 0; i + 1 < events.length; i++) {
+            const k1 = events[i],
+              k2 = events[i + 1];
+            if (k1.up == null || k2.up == null) continue;
+            digs.push({
+              key1: k1.key,
+              key2: k2.key,
+              features: [
+                k1.up - k1.down,
+                k2.down - k1.down,
+                k2.down - k1.up,
+                k2.up - k1.down,
+                k2.up - k1.up,
+              ],
+            });
+          }
+          fetch("/predict", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              participant: p,
+              session: s,
+              digraphs: digs,
+            }),
+          })
+            .then((r) => r.json())
+            .then((js) => {
+              if (js.error) result.textContent = js.error;
+              else {
+                result.textContent = `Predicted: ${js.predicted_user}`;
+                saved.textContent = js.saved ? "✓ Saved" : "⚠️ Failed to save";
+              }
+            });
+        });
+
+        resetBtn.addEventListener("click", () => {
+          setupListeners();
+          result.textContent = "";
+          saved.textContent = "";
+        });
+      });
+    </script>
+  </body>
+</html>

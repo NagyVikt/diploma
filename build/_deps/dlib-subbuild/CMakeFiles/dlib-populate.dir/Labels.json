@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/CMakeFiles/dlib-populate"
+		},
+		{
+			"file" : "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/CMakeFiles/902f4db5aaddc5daee6f6cd2b731389d/dlib-populate.rule"
+		},
+		{
+			"file" : "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/CMakeFiles/92da9c97478c13d88a617ec7a0cd23b4/dlib-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/CMakeFiles/2204e140755e80dcef32261748328897/dlib-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/CMakeFiles/2204e140755e80dcef32261748328897/dlib-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/CMakeFiles/2204e140755e80dcef32261748328897/dlib-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/CMakeFiles/2204e140755e80dcef32261748328897/dlib-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/CMakeFiles/2204e140755e80dcef32261748328897/dlib-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/CMakeFiles/2204e140755e80dcef32261748328897/dlib-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/CMakeFiles/2204e140755e80dcef32261748328897/dlib-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/CMakeFiles/2204e140755e80dcef32261748328897/dlib-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"dlib-populate"
+		],
+		"name" : "dlib-populate"
+	}
+}

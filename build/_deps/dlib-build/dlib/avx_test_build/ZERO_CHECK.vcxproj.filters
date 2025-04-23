@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\laura\keystrokeDynamics2FA\build\_deps\dlib-build\dlib\avx_test_build\CMakeFiles\c87b43092826eb6133ac6b73c1fe92ba\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8B219DB9-FB3E-3455-A772-AF540FC7EF71}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,150 @@
+^C:\USERS\LAURA\KEYSTROKEDYNAMICS2FA\BUILD\_DEPS\DLIB-SUBBUILD\CMAKEFILES\2204E140755E80DCEF32261748328897\DLIB-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/dlib-populate-prefix/tmp/dlib-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/dlib-populate-prefix/src/dlib-populate-stamp/Debug/dlib-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LAURA\KEYSTROKEDYNAMICS2FA\BUILD\_DEPS\DLIB-SUBBUILD\CMAKEFILES\2204E140755E80DCEF32261748328897\DLIB-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\Users\laura\keystrokeDynamics2FA\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/dlib-populate-prefix/tmp/dlib-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/dlib-populate-prefix/src/dlib-populate-stamp/Debug/dlib-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LAURA\KEYSTROKEDYNAMICS2FA\BUILD\_DEPS\DLIB-SUBBUILD\CMAKEFILES\2204E140755E80DCEF32261748328897\DLIB-POPULATE-UPDATE.RULE
+setlocal
+cd C:\Users\laura\keystrokeDynamics2FA\build\_deps\dlib-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/dlib-populate-prefix/tmp/dlib-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LAURA\KEYSTROKEDYNAMICS2FA\BUILD\_DEPS\DLIB-SUBBUILD\CMAKEFILES\2204E140755E80DCEF32261748328897\DLIB-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/dlib-populate-prefix/src/dlib-populate-stamp/Debug/dlib-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LAURA\KEYSTROKEDYNAMICS2FA\BUILD\_DEPS\DLIB-SUBBUILD\CMAKEFILES\2204E140755E80DCEF32261748328897\DLIB-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\Users\laura\keystrokeDynamics2FA\build\_deps\dlib-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/dlib-populate-prefix/src/dlib-populate-stamp/Debug/dlib-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LAURA\KEYSTROKEDYNAMICS2FA\BUILD\_DEPS\DLIB-SUBBUILD\CMAKEFILES\2204E140755E80DCEF32261748328897\DLIB-POPULATE-BUILD.RULE
+setlocal
+cd C:\Users\laura\keystrokeDynamics2FA\build\_deps\dlib-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/dlib-populate-prefix/src/dlib-populate-stamp/Debug/dlib-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LAURA\KEYSTROKEDYNAMICS2FA\BUILD\_DEPS\DLIB-SUBBUILD\CMAKEFILES\2204E140755E80DCEF32261748328897\DLIB-POPULATE-INSTALL.RULE
+setlocal
+cd C:\Users\laura\keystrokeDynamics2FA\build\_deps\dlib-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/dlib-populate-prefix/src/dlib-populate-stamp/Debug/dlib-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LAURA\KEYSTROKEDYNAMICS2FA\BUILD\_DEPS\DLIB-SUBBUILD\CMAKEFILES\2204E140755E80DCEF32261748328897\DLIB-POPULATE-TEST.RULE
+setlocal
+cd C:\Users\laura\keystrokeDynamics2FA\build\_deps\dlib-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/dlib-populate-prefix/src/dlib-populate-stamp/Debug/dlib-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LAURA\KEYSTROKEDYNAMICS2FA\BUILD\_DEPS\DLIB-SUBBUILD\CMAKEFILES\92DA9C97478C13D88A617EC7A0CD23B4\DLIB-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/CMakeFiles/Debug/dlib-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/dlib-populate-prefix/src/dlib-populate-stamp/Debug/dlib-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LAURA\KEYSTROKEDYNAMICS2FA\BUILD\_DEPS\DLIB-SUBBUILD\CMAKEFILES\902F4DB5AADDC5DAEE6F6CD2B731389D\DLIB-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LAURA\KEYSTROKEDYNAMICS2FA\BUILD\_DEPS\DLIB-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild -BC:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild --check-stamp-file C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+^C:\USERS\LAURA\KEYSTROKEDYNAMICS2FA\BUILD\_DEPS\DLIB-BUILD\DLIB\AVX_TEST_BUILD\CMAKEFILES\C87B43092826EB6133AC6B73C1FE92BA\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/test_for_avx -BC:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-build/dlib/avx_test_build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-build/dlib/avx_test_build/avx_test.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

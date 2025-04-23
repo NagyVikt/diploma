@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\laura\keystrokeDynamics2FA\build\_deps\pybind11-subbuild\CMakeFiles\5273d4b6e8f3d65256109dac96747918\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{00EFCFAE-0F63-3712-9179-F61647FB0EC6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

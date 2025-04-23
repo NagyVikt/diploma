@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\laura\keystrokeDynamics2FA\build\_deps\dlib-build\dlib\neon_test_build\CMakeFiles\662fb3947932278db4fecc30ac54849d\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{95A4203B-E46D-348A-A081-8B2DA87329F7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

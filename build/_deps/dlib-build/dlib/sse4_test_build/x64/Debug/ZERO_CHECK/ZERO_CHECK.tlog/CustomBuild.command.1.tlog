@@ -1,0 +1,10 @@
+^C:\USERS\LAURA\KEYSTROKEDYNAMICS2FA\BUILD\_DEPS\DLIB-BUILD\DLIB\SSE4_TEST_BUILD\CMAKEFILES\7721C20382DFFC1DDCCE5EFA72D26CFD\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-src/dlib/cmake_utils/test_for_sse4 -BC:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-build/dlib/sse4_test_build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/laura/keystrokeDynamics2FA/build/_deps/dlib-build/dlib/sse4_test_build/sse4_test.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

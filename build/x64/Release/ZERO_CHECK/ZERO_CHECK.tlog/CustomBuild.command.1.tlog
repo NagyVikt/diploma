@@ -1,0 +1,10 @@
+^C:\USERS\LAURA\KEYSTROKEDYNAMICS2FA\BUILD\CMAKEFILES\12EA13F8F6E8B520F241A3F65D07D08D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/laura/keystrokeDynamics2FA/diplomawork_wrapper -BC:/Users/laura/keystrokeDynamics2FA/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/laura/keystrokeDynamics2FA/build/dnn_wrapper.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
